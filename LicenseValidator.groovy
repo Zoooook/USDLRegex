@@ -57,7 +57,7 @@ class LicenseValidator {
             case 'TN': return licenseNumber.matches(/^[0-9]{8,9}$/) // 8-9 Numeric -- LN
             case 'TX': return licenseNumber.matches(/^[0-9]{8}$/) // 8 Numeric
             case 'UT': return licenseNumber.matches(/^([0-9]{4,9}|0[0-9]{9})$/) // 4-9 Numeric or '0' + 9 Numeric -- LN
-            case 'VT': return licenseNumber.matches(/^[0-9]{7}[0-9vV]$/) // 7 Numeric + 1 (Numeric or 'V') -- LN
+            case 'VT': return licenseNumber.matches(/^[0-9]{7}[0-9aA]$/) // 7 Numeric + 1 (Numeric or 'A') -- LN
             case 'WA': return licenseNumber.matches(/^[a-zA-Z]{2}[a-zA-Z\*]{3}[a-zA-Z][a-zA-Z\*][0-9]{3}[a-zA-Z1-9][a-nA-Np-zP-Z0-9]$/) // 2 Alpha + 3 (Alpha or *) + 1 Alpha + 1 (Alpha or *) + 3 Numeric + 1 AlphaNumeric (excluding '0') + 1 AlphaNumeric (excluding 'O') -- LN
             case 'WV': return licenseNumber.matches(/^([a-fA-FiIoOrRsS01][0-9]|[1xX][xX])[0-9]{5}$/) // ('A', 'B', 'C', 'D', 'E', 'F', 'I', 'O', 'R', 'S', '0', or '1') + 6 Numeric   or   ('1' or 'X') + 'X' + 5 Numeric -- LN
             case 'WI': return licenseNumber.matches(/^[a-zA-Z][0-9]{13}$/) // 1 Alpha + 13 Numeric
