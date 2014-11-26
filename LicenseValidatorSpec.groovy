@@ -743,10 +743,9 @@ class LicenseValidatorSpec extends Specification{
         "VT"    | "A1234567"            | false
         "VT"    | "A12345678"           | false
         "VT"    | "123456A"             | false
-        "VT"    | "1234567A"            | false
-        "VT"    | "1234567U"            | false
-        "VT"    | "1234567V"            | true
-        "VT"    | "1234567W"            | false
+        "VT"    | "1234567A"            | true
+        "VT"    | "1234567B"            | false
+        "VT"    | "1234567Z"            | false
         "VT"    | "12345678A"           | false
         "VT"    | "1234567"             | false
         "VT"    | "ABCDEFGH"            | false
